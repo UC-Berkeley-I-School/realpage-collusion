@@ -428,35 +428,35 @@
               Propensity Score:
             </span>
           </strong>
-          <span class="text-info fw-bold">${propensity !== null ? propensity.toFixed(4) : 'N/A'}</span><br>
+          <span class="text-dark fw-bold">${propensity !== null ? propensity.toFixed(4) : 'N/A'}</span><br>
 
           <strong>
             <span data-bs-toggle="tooltip" title="The estimated average increase in rent per square foot due to RealPage usage.">
               ATT (Effect of RealPage):
             </span>
           </strong>
-          <span class="text-info fw-bold">${att !== null ? `$${att.toFixed(2)}` : 'N/A'}</span><br>
+          <span class="text-dark fw-bold">${att !== null ? `$${att.toFixed(2)}` : 'N/A'}</span><br>
 
           <strong>
             <span data-bs-toggle="tooltip" title="Predicted rent per square foot for properties using RealPage.">
               RPSF (RealPage):
             </span>
           </strong>
-          <span class="text-info fw-bold">${rpsfRealPage !== null ? `$${rpsfRealPage.toFixed(2)}` : 'N/A'}</span><br>
+          <span class="text-dark fw-bold">${rpsfRealPage !== null ? `$${rpsfRealPage.toFixed(2)}` : 'N/A'}</span><br>
 
           <strong>
             <span data-bs-toggle="tooltip" title="Predicted rent per square foot for properties not using RealPage.">
               RPSF (Non-RealPage):
             </span>
           </strong>
-          <span class="text-info fw-bold">${rpsfNonRealPage !== null ? `$${rpsfNonRealPage.toFixed(2)}` : 'N/A'}</span><br>
+          <span class="text-dark fw-bold">${rpsfNonRealPage !== null ? `$${rpsfNonRealPage.toFixed(2)}` : 'N/A'}</span><br>
 
           <strong>
             <span data-bs-toggle="tooltip" title="The estimated total monthly rent for this property if it uses RealPage.">
               Estimated Rent (Treated - Uses RealPage):
             </span>
           </strong>
-          <span class="text-info fw-bold">
+          <span class="text-dark fw-bold">
             ${data.rent_estimates?.treated?.[0] ? `$${data.rent_estimates.treated[0].toFixed(2)}` : 'N/A'}
           </span><br>
 
@@ -465,7 +465,7 @@
               Estimated Rent (Control - No RealPage):
             </span>
           </strong>
-          <span class="text-info fw-bold">
+          <span class="text-dark fw-bold">
             ${data.rent_estimates?.control?.[0] ? `$${data.rent_estimates.control[0].toFixed(2)}` : 'N/A'}
           </span><br>
 
@@ -515,14 +515,14 @@
               Predicted RPSF:
             </span>
           </strong>
-          <span class="text-info fw-bold">$${data2.predictions?.[0] ? data2.predictions[0].toFixed(2) : 'N/A'}</span><br>
+          <span class="text-dark fw-bold">$${data2.predictions?.[0] ? data2.predictions[0].toFixed(2) : 'N/A'}</span><br>
 
           <strong>
             <span data-bs-toggle="tooltip" title="The estimated total rent for this property using market-based prediction.">
               Estimated Rent:
             </span>
           </strong>
-          <span class="text-info fw-bold">${data2.rent_estimates?.[0] ? `$${data2.rent_estimates[0].toFixed(2)}` : 'N/A'}</span><br>
+          <span class="text-dark fw-bold">${data2.rent_estimates?.[0] ? `$${data2.rent_estimates[0].toFixed(2)}` : 'N/A'}</span><br>
         `;
         outputHTML += `
           <hr>
